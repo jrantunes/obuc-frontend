@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render with the medium size by default 1`] = `
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #5ce1e6;
+  color: #FFFFFF;
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  border: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  height: 3.6rem;
+  font-size: 1.8rem;
+  padding: 0.8rem 4.8rem;
+}
+
+.c0:hover {
+  background: #46dde3;
+}
+
+.c0:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c0:disabled:hover {
+  background: #5ce1e6;
+}
+
+.c0 svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+<button
+  class="c0"
+  color="primary"
+>
+  <span>
+    Button
+  </span>
+</button>
+`;

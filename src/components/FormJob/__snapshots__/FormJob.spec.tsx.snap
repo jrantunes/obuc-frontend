@@ -1,0 +1,526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormJob /> should render the form 1`] = `
+.c14 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: #5ce1e6;
+  color: #FFFFFF;
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  font-weight: 400;
+  border: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  padding: 0.8rem;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  height: 3.6rem;
+  font-size: 1.8rem;
+  padding: 0.8rem 4.8rem;
+}
+
+.c14:hover {
+  background: #46dde3;
+}
+
+.c14:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.c14:disabled:hover {
+  background: #5ce1e6;
+}
+
+.c14 svg {
+  width: 2rem;
+  height: 2rem;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c14 svg + span {
+  margin-left: 0.8rem;
+}
+
+.c14 svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0 1.6rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #5ce1e6;
+  position: relative;
+  cursor: text;
+}
+
+.c4 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  padding-left: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.c4:focus-within + label {
+  -webkit-transform: translate(0,-2rem);
+  -ms-transform: translate(0,-2rem);
+  transform: translate(0,-2rem);
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c5 {
+  font-size: 1.6rem;
+  background: transparent;
+  width: 100%;
+  padding: 1.6rem 0;
+  border: 0;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c5::-webkit-input-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c5::-moz-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c5:-ms-input-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c5::placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c6 {
+  cursor: text;
+  position: absolute;
+  background: #FFFFFF;
+  color: #5ce1e6;
+  font-size: 1.4rem;
+  -webkit-transform: translate(0.8rem,0);
+  -ms-transform: translate(0.8rem,0);
+  transform: translate(0.8rem,0);
+  padding: 0 0.4rem;
+  top: 0.8rem;
+  left: calc(1.6rem - 0.4rem);
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c3 svg {
+  width: 2rem;
+  height: 2rem;
+  color: #5ce1e6;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c0 form {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c0 form .c1 + .c1 {
+  margin-top: 2.4rem;
+}
+
+.c0 form .c13 {
+  margin: 3.2rem auto 0;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0 1.6rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #5ce1e6;
+  position: relative;
+  cursor: text;
+}
+
+.c10 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c10:focus-within + label {
+  -webkit-transform: translate(0,-2rem);
+  -ms-transform: translate(0,-2rem);
+  transform: translate(0,-2rem);
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c11 {
+  font-size: 1.6rem;
+  background: transparent;
+  width: 100%;
+  padding: 1.6rem 0;
+  border: 0;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c11::-webkit-input-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c11::-moz-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c11:-ms-input-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c11::placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c12 {
+  cursor: text;
+  position: absolute;
+  background: #FFFFFF;
+  color: #5ce1e6;
+  font-size: 1.4rem;
+  -webkit-transform: translate(0.8rem,0);
+  -ms-transform: translate(0.8rem,0);
+  transform: translate(0.8rem,0);
+  padding: 0 0.4rem;
+  top: 0.8rem;
+  left: calc(1.6rem - 0.4rem);
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c7 .c8 {
+  margin-top: 2.4rem;
+}
+
+<div
+  class="c0"
+>
+  <form>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <input
+            autocomplete="off"
+            class="c5"
+            id="name"
+            name="name"
+            placeholder="Título do cargo"
+            value=""
+          />
+        </div>
+        <label
+          aria-hidden="true"
+          class="c6"
+          for="name"
+        >
+          Título do cargo
+        </label>
+      </div>
+    </div>
+    <div
+      class="c1 "
+    >
+      <div
+        class="c2"
+      >
+        <div
+          class="c3"
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"
+            />
+          </svg>
+        </div>
+        <div
+          class="c4"
+        >
+          <input
+            autocomplete="off"
+            class="c5"
+            id="salary"
+            name="salary"
+            placeholder="Salário"
+            value=""
+          />
+        </div>
+        <label
+          aria-hidden="true"
+          class="c6"
+          for="salary"
+        >
+          Salário
+        </label>
+      </div>
+    </div>
+    <div
+      class="c7"
+    >
+      <div
+        class="c8 "
+      >
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          >
+            <input
+              autocomplete="off"
+              class="c11"
+              id="activities"
+              name="activities"
+              placeholder="Atividades (Digite o nome e aperte ENTER para adicionar)"
+              value=""
+            />
+          </div>
+          <label
+            aria-hidden="true"
+            class="c12"
+            for="activities"
+          >
+            Atividades
+          </label>
+        </div>
+      </div>
+      <div
+        class="c8 "
+      >
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          >
+            <input
+              autocomplete="off"
+              class="c11"
+              id="benefits"
+              name="benefits"
+              placeholder="Benefícios (Digite o nome e aperte ENTER para adicionar)"
+              value=""
+            />
+          </div>
+          <label
+            aria-hidden="true"
+            class="c12"
+            for="benefits"
+          >
+            Benefícios
+          </label>
+        </div>
+      </div>
+      <div
+        class="c8 "
+      >
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          >
+            <input
+              autocomplete="off"
+              class="c11"
+              id="steps"
+              name="steps"
+              placeholder="Etapas (Digite o nome e aperte ENTER para adicionar)"
+              value=""
+            />
+          </div>
+          <label
+            aria-hidden="true"
+            class="c12"
+            for="steps"
+          >
+            Etapas do processo
+          </label>
+        </div>
+      </div>
+      <div
+        class="c8 "
+      >
+        <div
+          class="c9"
+        >
+          <div
+            class="c10"
+          >
+            <input
+              autocomplete="off"
+              class="c11"
+              id="skills"
+              name="skills"
+              placeholder="Habilidades (Digite o nome e aperte ENTER para adicionar)"
+              value=""
+            />
+          </div>
+          <label
+            aria-hidden="true"
+            class="c12"
+            for="skills"
+          >
+            Habilidades
+          </label>
+        </div>
+      </div>
+    </div>
+    <button
+      class="c13 c14"
+      color="primary"
+      type="button"
+    >
+      <svg
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M893.3 293.3L730.7 130.7c-7.5-7.5-16.7-13-26.7-16V112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V338.5c0-17-6.7-33.2-18.7-45.2zM384 184h256v104H384V184zm456 656H184V184h136v136c0 17.7 14.3 32 32 32h320c17.7 0 32-14.3 32-32V205.8l136 136V840zM512 442c-79.5 0-144 64.5-144 144s64.5 144 144 144 144-64.5 144-144-64.5-144-144-144zm0 224c-44.2 0-80-35.8-80-80s35.8-80 80-80 80 35.8 80 80-35.8 80-80 80z"
+        />
+      </svg>
+      <span>
+        Salvar
+      </span>
+    </button>
+  </form>
+</div>
+`;

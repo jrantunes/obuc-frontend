@@ -1,3 +1,5 @@
+import FormJob from "components/FormJob";
+
 export const JobMerge = () => {
-  return <h1>Job Merge</h1>;
+  return <FormJob />;
 };

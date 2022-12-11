@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextField /> should render with icon 1`] = `
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  padding: 0 1.6rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #5ce1e6;
+  position: relative;
+  cursor: text;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  padding-left: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+.c5:focus-within + label {
+  -webkit-transform: translate(0,-2rem);
+  -ms-transform: translate(0,-2rem);
+  transform: translate(0,-2rem);
+  opacity: 1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c6 {
+  font-size: 1.6rem;
+  background: transparent;
+  width: 100%;
+  padding: 1.6rem 0;
+  border: 0;
+  outline: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c6::-webkit-input-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c6::-moz-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c6:-ms-input-placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c6::placeholder {
+  font-family: Roboto,--apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+  color: #8F8F8F;
+}
+
+.c8 {
+  cursor: text;
+  position: absolute;
+  background: #FFFFFF;
+  color: #5ce1e6;
+  font-size: 1.4rem;
+  -webkit-transform: translate(0.8rem,0);
+  -ms-transform: translate(0.8rem,0);
+  transform: translate(0.8rem,0);
+  padding: 0 0.4rem;
+  top: 0.8rem;
+  left: calc(1.6rem - 0.4rem);
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.c4 svg {
+  width: 2rem;
+  height: 2rem;
+  color: #5ce1e6;
+}
+
+.c9 {
+  color: #FF6347;
+  font-size: 1.2rem;
+}
+
+.c0 .c7 {
+  color: #FF6347;
+}
+
+.c0 .c1 {
+  border: 0.1rem solid #FF6347;
+}
+
+.c0 .c3 svg {
+  color: #FF6347;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1 c2"
+  >
+    <div
+      class="c3 c4"
+    >
+      <svg
+        data-testid="icon"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 1024 1024"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"
+        />
+      </svg>
+    </div>
+    <div
+      class="c5"
+    >
+      <input
+        autocomplete="off"
+        class="c6"
+        id="input"
+        placeholder="Placeholder"
+        value=""
+      />
+    </div>
+    <label
+      aria-hidden="true"
+      class="c7 c8"
+      for="input"
+    >
+      Label
+    </label>
+  </div>
+  <p
+    class="c9"
+  >
+    Error Message
+  </p>
+</div>
+`;

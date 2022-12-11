@@ -37,7 +37,7 @@ const GlobalStyles: GlobalStyleComponent<
       font-size: ${theme.font.sizes.medium};
       ${!removeBg &&
       css`
-        background-color: ${theme.colors.lightBg};
+        background-color: ${theme.colors.white};
       `};
     }
   `}
