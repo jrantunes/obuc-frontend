@@ -59,7 +59,7 @@
     ]
   },
   "lint-staged": {
-    "src/**/*": [
+    "src/**/*.{ts,tsx,js}": [
       "yarn lint --fix",
       "yarn test --passWithNoTests --bail"
     ]
@@ -72,7 +72,8 @@
       "!src/reportWebVitals.ts",
       "!src/**/*.d.ts",
       "!src/index.tsx"
-    ]
+    ],
+    "resetMocks": false
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.14",
