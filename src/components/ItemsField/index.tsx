@@ -10,7 +10,7 @@ import * as S from "./styles";
 
 export type ItemsFieldProps = {
   onInputChange?: (value: string) => void;
-  onAddItem?: (updatedItems: string[]) => void;
+  onUpdateItems?: (updatedItems: string[]) => void;
   icon?: React.ReactNode;
   iconPosition?: "left" | "right";
   label?: string;
@@ -23,7 +23,7 @@ export type ItemsFieldProps = {
 
 const ItemsField = ({
   onInputChange,
-  onAddItem,
+  onUpdateItems,
   label,
   error,
   labelFor = "",
@@ -49,6 +49,8 @@ const ItemsField = ({
     updatedItems.splice(index, 1);
 
     setItems(updatedItems);
+
+    onUpdateItems && onUpdateItems(updatedItems);
   };
 
   const handleAddNewItem = (event: KeyboardEvent<HTMLInputElement>) => {
@@ -59,9 +61,7 @@ const ItemsField = ({
 
       setItems(newItems);
 
-      onAddItem && onAddItem(newItems);
-
-      console.log(newItems);
+      onUpdateItems && onUpdateItems(newItems);
 
       setValue("");
     }
