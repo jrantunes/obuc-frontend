@@ -43,21 +43,21 @@ const wrapperModifiers = {
     width: 100%;
   `,
 
-  minimal: (theme: DefaultTheme) => css`
+  minimal: (theme: DefaultTheme, color: "primary" | "secondary") => css`
     background: none;
-    color: ${theme.colors.primary};
+    color: ${theme.colors[color]};
     transition: color ${theme.transitions.fast};
     padding: 0;
     height: auto;
 
     &:hover {
-      color: ${darken(0.08, theme.colors.primary)};
+      color: ${darken(0.08, theme.colors[color])};
     }
 
     &:disabled {
       &:hover {
         background: none;
-        color: ${theme.colors.primary};
+        color: ${theme.colors[color]};
       }
     }
   `,
@@ -124,6 +124,6 @@ export const Wrapper = styled.button<WrapperProps>`
       ${fullWidth && wrapperModifiers.fullWidth()}
       ${!!size && wrapperModifiers[size!](theme)}
       ${hasOnlyIcon && wrapperModifiers.onlyIcon(theme, size!)}
-      ${minimal && wrapperModifiers.minimal(theme)}
+      ${minimal && wrapperModifiers.minimal(theme, color!)}
     `}
 `;
