@@ -14,11 +14,11 @@ export const Wrapper = styled.main`
 
     a {
       text-decoration: none;
-    }
-
-    ${ButtonStyles.Wrapper} {
       margin-top: ${theme.spacings.medium};
-      font-weight: bold;
+
+      ${ButtonStyles.Wrapper} {
+        font-weight: bold;
+      }
     }
   `}
 `;

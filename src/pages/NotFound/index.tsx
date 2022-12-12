@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 
 export const NotFound = () => (
   <S.Wrapper>
-    <img src={backgroundImg} alt="" />
+    <img
+      src={backgroundImg}
+      alt="Uma imagem de um bolo triste com um garfo ao lado esquerdo"
+    />
     <Heading size="xlarge" weight="bold">
       Página não encontrada
     </Heading>
