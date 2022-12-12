@@ -48,7 +48,7 @@ export const InputContent = styled.div<InputContentProps>`
     css`
       &:focus-within {
         & + label {
-          transform: translate(0, -2rem);
+          transform: translate(0, -1.8rem);
           opacity: 1;
           transition: 0.4s;
         }
@@ -83,7 +83,7 @@ export const Label = styled.label<HasValueProps>`
     background: ${theme.colors.white};
     color: ${theme.colors.primary};
     font-size: ${theme.font.sizes.small};
-    transform: ${hasValue ? "translate(0, -2rem)" : "translate(0.8rem, 0)"};
+    transform: ${hasValue ? "translate(0, -1.8rem)" : "translate(0.8rem, 0)"};
     padding: 0 0.4rem;
     top: 0.8rem;
     left: calc(${theme.spacings.xsmall} - 0.4rem);

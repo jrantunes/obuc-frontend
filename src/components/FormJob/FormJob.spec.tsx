@@ -5,7 +5,7 @@ import FormJob from ".";
 
 describe("<FormJob />", () => {
   it("should render the form", () => {
-    const { container } = renderWithTheme(<FormJob />);
+    const { container } = renderWithTheme(<FormJob handleData={jest.fn()} />);
 
     expect(screen.getByPlaceholderText(/Título do cargo/i)).toBeInTheDocument();
 

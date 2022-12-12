@@ -26,6 +26,7 @@ describe("<Form />", () => {
         -ms-flex-direction: column;
         flex-direction: column;
         height: 100%;
+        width: 100%;
       }
 
       .c0 form {

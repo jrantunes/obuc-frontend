@@ -28,9 +28,9 @@ exports[`<TextField /> should render with icon 1`] = `
 }
 
 .c5:focus-within + label {
-  -webkit-transform: translate(0,-2rem);
-  -ms-transform: translate(0,-2rem);
-  transform: translate(0,-2rem);
+  -webkit-transform: translate(0,-1.8rem);
+  -ms-transform: translate(0,-1.8rem);
+  transform: translate(0,-1.8rem);
   opacity: 1;
   -webkit-transition: 0.4s;
   transition: 0.4s;

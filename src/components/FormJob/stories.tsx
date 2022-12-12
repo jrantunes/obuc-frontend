@@ -7,8 +7,8 @@ export default {
   //args: {}
 } as ComponentMeta<typeof FormJob>;
 
-export const Default: ComponentStory<typeof FormJob> = () => (
+export const Default: ComponentStory<typeof FormJob> = (args) => (
   <div style={{ width: 500, height: 300, margin: "auto" }}>
-    <FormJob />
+    <FormJob {...args} />
   </div>
 );

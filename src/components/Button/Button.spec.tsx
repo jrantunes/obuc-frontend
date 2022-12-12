@@ -33,7 +33,7 @@ describe("<Button />", () => {
     expect(screen.getByRole("button", { name: /button/i })).toHaveStyle({
       height: "6rem",
       padding: "0.8rem 4.8rem",
-      "font-size": "2.0rem"
+      "font-size": "2rem"
     });
   });
 

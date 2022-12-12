@@ -11,24 +11,31 @@ import { JobFormValues } from "./types";
 import { initialValues, jobSchema } from "./constants";
 
 import * as S from "./styles";
+import { Job } from "contexts/types";
 
 const inputNumberInvalidChars = ["e", ".", "+", "-"];
 
-const FormJob = () => {
+type FormJobProps = {
+  handleData: (values: JobFormValues) => void;
+  jobData?: Job;
+};
+
+const FormJob = ({ handleData, jobData }: FormJobProps) => {
   const {
     watch,
     handleSubmit,
     formState: { errors },
     setError,
     setValue,
+    getValues,
     register
   } = useForm<JobFormValues>({
     resolver: yupResolver(jobSchema),
-    defaultValues: initialValues
+    defaultValues: jobData || initialValues
   });
 
   const onSubmit = (values: JobFormValues) => {
-    console.log(values);
+    handleData(values);
   };
 
   return (
@@ -76,6 +83,9 @@ const FormJob = () => {
             labelFor="activities"
             name="activities"
             error={errors.activities?.message}
+            initialItems={getValues("activities")
+              .split(",")
+              .filter((i) => !!i)}
             onUpdateItems={(items) => {
               setValue("activities", items.join(","));
               setError("activities", { message: "" });
@@ -87,6 +97,9 @@ const FormJob = () => {
             labelFor="benefits"
             name="benefits"
             error={errors.benefits?.message}
+            initialItems={getValues("benefits")
+              .split(",")
+              .filter((i) => !!i)}
             onUpdateItems={(items) => {
               setValue("benefits", items.join(","));
               setError("benefits", { message: "" });
@@ -98,6 +111,9 @@ const FormJob = () => {
             labelFor="steps"
             name="steps"
             error={errors.steps?.message}
+            initialItems={getValues("steps")
+              .split(",")
+              .filter((i) => !!i)}
             onUpdateItems={(items) => {
               setValue("steps", items.join(","));
               setError("steps", { message: "" });
@@ -109,9 +125,26 @@ const FormJob = () => {
             labelFor="skills"
             name="skills"
             error={errors.skills?.message}
+            initialItems={getValues("skills")
+              .split(",")
+              .filter((i) => !!i)}
             onUpdateItems={(items) => {
               setValue("skills", items.join(","));
               setError("skills", { message: "" });
+            }}
+          />
+          <ItemsField
+            label="Experiências"
+            placeholder="Experiências (Digite o nome e aperte ENTER para adicionar)"
+            labelFor="experiences"
+            name="experiences"
+            error={errors.experiences?.message}
+            initialItems={getValues("experiences")
+              .split(",")
+              .filter((i) => !!i)}
+            onUpdateItems={(items) => {
+              setValue("experiences", items.join(","));
+              setError("experiences", { message: "" });
             }}
           />
         </S.ListFieldsWrapper>
