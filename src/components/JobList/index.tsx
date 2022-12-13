@@ -1,5 +1,9 @@
+import downloadjs from "downloadjs";
+import { pdf } from "@react-pdf/renderer";
 import Heading from "components/Heading";
 import JobCard from "components/JobCard";
+import JobTemplate from "components/JobTemplate";
+import { Job } from "contexts/types";
 import { useJobs } from "hooks/useJobs";
 import * as S from "./styles";
 
@@ -13,6 +17,11 @@ const JobList = () => {
     }).format(value);
   };
 
+  const handleDownloadPdf = async (job: Job) => {
+    const blob = await pdf(<JobTemplate job={job} />).toBlob();
+    downloadjs(blob, `vaga-${job.id!}`);
+  };
+
   return (
     <S.Wrapper>
       <ul>
@@ -23,6 +32,7 @@ const JobList = () => {
               id={job.id!}
               name={job.name}
               description={formatCurrency(Number(job.salary))}
+              handleDownloadPdf={() => handleDownloadPdf(job)}
             />
           ))
         ) : (

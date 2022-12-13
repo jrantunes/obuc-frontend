@@ -3,6 +3,15 @@ import { renderWithTheme } from "utils/tests/helpers";
 
 import FormJob from ".";
 
+jest.mock("@react-pdf/renderer", () => {
+  return {
+    pdf: jest.fn(),
+    StyleSheet: {
+      create: jest.fn()
+    }
+  };
+});
+
 describe("<FormJob />", () => {
   it("should render the form", () => {
     const { container } = renderWithTheme(<FormJob handleData={jest.fn()} />);

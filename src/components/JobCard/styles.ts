@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import * as ButtonStyles from "components/Button/styles";
+
 export const Wrapper = styled.li`
   ${({ theme }) => css`
     background: ${theme.colors.lightBg};
@@ -30,6 +32,10 @@ export const ActionsContainer = styled.div`
       align-items: center;
       justify-content: center;
       margin-right: ${theme.spacings.xsmall};
+    }
+
+    ${ButtonStyles.Wrapper} + ${ButtonStyles.Wrapper} {
+      margin-left: ${theme.spacings.xsmall};
     }
   `}
 `;

@@ -21,6 +21,15 @@ jest.mock("hooks/useJobs", () => {
   };
 });
 
+jest.mock("@react-pdf/renderer", () => {
+  return {
+    pdf: jest.fn(),
+    StyleSheet: {
+      create: jest.fn()
+    }
+  };
+});
+
 describe("<JobList />", () => {
   it("should render with items", () => {
     (useJobs as jest.Mock).mockReturnValue({

@@ -1,6 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import downloadjs from "downloadjs";
+import { pdf } from "@react-pdf/renderer";
 import { BsBriefcase, BsCurrencyDollar } from "react-icons/bs";
 import { AiOutlineSave } from "react-icons/ai";
+import { FiDownload } from "react-icons/fi";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Button from "components/Button";
@@ -12,6 +15,7 @@ import { initialValues, jobSchema } from "./constants";
 
 import * as S from "./styles";
 import { Job } from "contexts/types";
+import JobTemplate from "components/JobTemplate";
 
 const inputNumberInvalidChars = ["e", ".", "+", "-"];
 
@@ -36,6 +40,11 @@ const FormJob = ({ handleData, jobData }: FormJobProps) => {
 
   const onSubmit = (values: JobFormValues) => {
     handleData(values);
+  };
+
+  const handleDownloadPdf = async (job: Job) => {
+    const blob = await pdf(<JobTemplate job={job} />).toBlob();
+    downloadjs(blob, `vaga-${job.id!}`);
   };
 
   return (
@@ -156,6 +165,17 @@ const FormJob = ({ handleData, jobData }: FormJobProps) => {
         >
           Salvar
         </Button>
+
+        {!!jobData && (
+          <Button
+            type="button"
+            icon={<FiDownload />}
+            color="secondary"
+            onClick={() => handleDownloadPdf(jobData)}
+          >
+            Baixar
+          </Button>
+        )}
       </form>
     </FormWrapper>
   );

@@ -9,7 +9,9 @@ const Header = () => {
 
   return (
     <S.Wrapper>
-      <img src={logoImg} alt="Logo da confeitaria dona maria" />
+      <Link to="/">
+        <img src={logoImg} alt="Logo da confeitaria dona maria" />
+      </Link>
       <div>
         <Link to="/">
           <Button minimal>Vagas</Button>
