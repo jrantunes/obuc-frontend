@@ -1,5 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 import { v4 as uuidV4 } from "uuid";
+import { toast } from "react-toastify";
 
 import { Job, JobContextData, JobContextProviderProps } from "./types";
 
@@ -45,6 +46,8 @@ export default function JobContextProvider({
     setJobs(updatedJobs);
 
     localStorage.setItem("@jobs", JSON.stringify(updatedJobs));
+
+    toast.success("Vaga removida com sucesso!");
   };
 
   const handleUpdateJob = (id: string, job: Job) => {

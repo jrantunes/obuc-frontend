@@ -20,8 +20,6 @@ export const JobEdit = () => {
     if (id) {
       const job = findJobById(id);
 
-      console.log(job);
-
       setJobData(job);
     }
   }, [id, findJobById]);

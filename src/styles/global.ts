@@ -35,6 +35,22 @@ const GlobalStyles: GlobalStyleComponent<
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: ${theme.colors.white};
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: ${theme.colors.primary};
+        border-radius: ${theme.border.radius};
+      }
+
+      scrollbar-width: thin;
+      scrollbar-color: ${theme.colors.primary} ${theme.colors.white};
+
       ${!removeBg &&
       css`
         background-color: ${theme.colors.white};

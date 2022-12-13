@@ -5,6 +5,13 @@ import TextField from ".";
 export default {
   title: "Form/TextField",
   component: TextField,
+  decorators: [
+    (Story) => (
+      <div style={{ maxWidth: 300, padding: 15 }}>
+        <Story />
+      </div>
+    )
+  ],
   args: {
     label: "Label",
     labelFor: "input",
@@ -38,15 +45,11 @@ export default {
 } as ComponentMeta<typeof TextField>;
 
 export const Default: ComponentStory<typeof TextField> = (args) => (
-  <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField {...args} />
-  </div>
+  <TextField {...args} />
 );
 
 export const withIcon: ComponentStory<typeof TextField> = (args) => (
-  <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField {...args} />
-  </div>
+  <TextField {...args} />
 );
 
 withIcon.args = {
@@ -54,9 +57,7 @@ withIcon.args = {
 };
 
 export const withError: ComponentStory<typeof TextField> = (args) => (
-  <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField {...args} />
-  </div>
+  <TextField {...args} />
 );
 
 withError.args = {
